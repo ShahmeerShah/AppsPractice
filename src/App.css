@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.ulfortimer{
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
