@@ -3,16 +3,31 @@ import './App.css';
 
 function App() {
 
-  const [count,setCount] = useState(0);
+  const [seconds,setSeconds] = useState(0);
+  const [active,setActive] = useState(false);
+
+
+  
+  useEffect(()=>{
+    
+    if(active){
+    var fun = setInterval(() => {
+      setSeconds(seconds+1)
+    }, 1000);
+  }
+    return ()=>clearInterval(fun)
+  },[seconds,active])
 
   return(
 
     <div className="App">
-      <h1>Counter</h1>
-      <h2>{count}</h2>
+      <h1>Timer</h1>
+      <h2>{seconds}</h2>
       <br/>
-      <button onClick={()=>setCount(count+1)}>Add Count</button>
-      <button onClick={()=>setCount(0)}>Reset</button>
+      <button onClick={()=>setActive(active?false:true)}>{active?"Pause":"Start"}</button>
+      <button onClick={()=>setSeconds(0)}>Reset</button>
+      
+
 
     </div>
   )
