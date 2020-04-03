@@ -1,7 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 .App {
   text-align: center;
+  background-color: #2B2B2B;
+  margin: 0;
+  font-family: 'Do Hyeon', sans-serif;;
+  color: white;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 400px;
+  height: 100vh;
 }
 
+
+.revenue{
+  background-color: #FFE401;
+  width: 360px;
+  border-radius: 20px ;
+  height: 70px;
+  margin: 0 auto ;
+}
+.revenue>div,h2{
+  display: inline-block;
+  color: rgb(37, 37, 37);
+  margin: 6px 4px 0px 4px;
+  
+}
+
+
+.formComp{
+  border-radius: 20px ;
+  width:360px;
+  background: #FF652F;
+  margin: 20px auto ;
+  padding: 20px 7px;
+  display: flex;  
+}
+
+form{
+  
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items:center;
+  align-content: center;
+}
+input,select{
+  margin-bottom: 15px;
+  border-color: white;
+  border-style: none;
+  border-radius: 20px;
+  height: 22px;
+  background-color: rgb(238, 238, 238);
+  width: 280px;
+  margin-top: 8px;
+}
+
+.label{
+  color: black;
+  font-size:15px; 
+  margin: 0;
+}
+
+.submitt{
+  background-color: blue;
+    height: 30px;
+    font-size:20px;
+    color: white;
+    width: 120px;
+    margin: 20px auto;
+}
+
+
+.listStyle{
+  border-radius: 20px;
+  list-style: none;
+  background-color: #FFE401;
+  color: #232323;
+  display: flex;
+  padding:10px;
+  margin: 10px ;
+  margin-left: -25px;
+}
+
+.records{
+  margin: 0 auto;
+}
+.ul{
+  margin: 0 auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
